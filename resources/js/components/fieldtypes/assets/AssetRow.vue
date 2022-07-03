@@ -11,6 +11,7 @@
                     class="asset-thumbnail max-h-full max-w-full rounded w-7 h-7 fit-cover"
                     loading="lazy"
                     :src="thumbnail"
+                    :alt="asset.basename"
                     v-if="isImage"
                 />
                 <file-icon :extension="asset.extension" v-else />
